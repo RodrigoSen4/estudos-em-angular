@@ -11,6 +11,8 @@ import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
+    TwoWayBindingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
