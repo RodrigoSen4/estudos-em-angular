@@ -7,6 +7,7 @@ import { FristComponentComponent } from './components/frist-component/frist-comp
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DiretivasComponent } from './components/diretivas/diretivas.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { EventosComponent } from './components/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,11 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
     FristComponentComponent,
     ParentDataComponent,
     DiretivasComponent,
-    IfRenderComponent
+    IfRenderComponent,
+    EventosComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
