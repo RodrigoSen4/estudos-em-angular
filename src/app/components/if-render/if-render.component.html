@@ -1,0 +1,7 @@
+<div class="class">
+    <div *ngIf="show">Estamos mostrando isso porque minha condição boleana é true</div>
+    <h2 *ngIf="name === 'Rodrigo'; else nameNaoEncontrado">O nome é Rodrigo</h2>
+    <ng-template #nameNaoEncontrado>
+        <h2>O nome nao é Rodrigo</h2>
+    </ng-template>
+</div>
