@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { FristComponentComponent } from './components/frist-component/frist-component.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DiretivasComponent } from './components/diretivas/diretivas.component';
@@ -27,7 +28,7 @@ import { FormsModule } from '@angular/forms';
     ListRenderComponent,
     TwoWayBindingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
